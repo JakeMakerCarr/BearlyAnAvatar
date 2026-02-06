@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bearly Avatar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Tamogachi-style companion</p>
+        <h1>Meet Bearly</h1>
+        <p class="subhead">
+          A friendly teddy bear avatar ready for future text-to-speech and
+          conversations.
+        </p>
+      </header>
+
+      <section class="avatar-card">
+        <div class="avatar">
+          <svg
+            class="bear"
+            viewBox="0 0 260 260"
+            role="img"
+            aria-labelledby="bearTitle"
+          >
+            <title id="bearTitle">Cute teddy bear avatar</title>
+            <defs>
+              <linearGradient id="fur" x1="0" x2="1">
+                <stop offset="0%" stop-color="#d8a67b" />
+                <stop offset="100%" stop-color="#bf8257" />
+              </linearGradient>
+              <linearGradient id="snout" x1="0" x2="1">
+                <stop offset="0%" stop-color="#f5d7b6" />
+                <stop offset="100%" stop-color="#eac6a1" />
+              </linearGradient>
+            </defs>
+            <circle cx="64" cy="70" r="36" fill="url(#fur)" />
+            <circle cx="196" cy="70" r="36" fill="url(#fur)" />
+            <circle cx="130" cy="140" r="96" fill="url(#fur)" />
+            <circle cx="88" cy="70" r="16" fill="#f5d7b6" opacity="0.6" />
+            <circle cx="172" cy="70" r="16" fill="#f5d7b6" opacity="0.6" />
+            <ellipse cx="130" cy="165" rx="48" ry="38" fill="url(#snout)" />
+            <ellipse cx="102" cy="130" rx="12" ry="16" fill="#3a281e" class="eye" />
+            <ellipse cx="158" cy="130" rx="12" ry="16" fill="#3a281e" class="eye" />
+            <circle cx="130" cy="155" r="10" fill="#2d1d14" />
+            <path
+              d="M118 176c6 10 18 16 32 16 14 0 26-6 32-16"
+              fill="none"
+              stroke="#2d1d14"
+              stroke-width="6"
+              stroke-linecap="round"
+            />
+            <circle cx="78" cy="156" r="10" fill="#f1a7a7" opacity="0.45" />
+            <circle cx="182" cy="156" r="10" fill="#f1a7a7" opacity="0.45" />
+          </svg>
+          <div class="bubble" id="bubble">Hi! I love cozy naps.</div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="label">Mood</span>
+            <span class="value">Curious</span>
+          </div>
+          <div class="stat">
+            <span class="label">Energy</span>
+            <span class="value">Warm &amp; Cozy</span>
+          </div>
+          <div class="stat">
+            <span class="label">Voice</span>
+            <span class="value">Coming soon</span>
+          </div>
+        </div>
+
+        <button class="cta" type="button" id="greet">Ask Bearly to greet</button>
+      </section>
+
+      <section class="notes">
+        <h2>Next steps</h2>
+        <ul>
+          <li>Add text-to-speech when you are ready.</li>
+          <li>Connect mood values to real data.</li>
+          <li>Give Bearly games, snacks, and reactions.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
